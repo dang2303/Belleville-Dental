@@ -131,6 +131,10 @@
     .fixed-header{
         display: none;
     }
+    .header-top{
+        transition: all 0.5s;
+        width: 85%;
+    }
 }
 /*end header*/
 /* #mobile{
@@ -278,6 +282,11 @@ hr{
     /* padding: 0 2%; */
 }
 @media (max-width: 768px) {
+    .item-goodpoint p {
+        height: 100px;
+        text-align: justify;
+        overflow: hidden;
+    }
     .content-2{
         flex-direction: column;
         margin: 0 auto;
