@@ -1,0 +1,98 @@
+:root {
+  --textColor: #345073;
+}
+.introduction {
+  padding-top: 140px;
+  margin-bottom: 100px;
+}
+.letter-customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+.hello {
+  font-size: 3rem;
+  padding-bottom: 15px;
+  font-weight: 500;
+  display: inline-block;
+}
+.hello > span {
+  color: var(--textColor);
+  font-weight: 600;
+}
+.text-letter {
+  font-size: 0.9rem;
+  font-weight: 300;
+  display: inline-block;
+}
+.text-letter > span {
+  color: var(--textColor);
+  font-weight: 600;
+}
+.text-introduction-doctor {
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 50px;
+  color: rgb(0, 119, 255);
+  font-size: 1rem;
+}
+.text-introduction-doctor > span:first-child {
+  padding-right: 14px;
+  font-weight: 700;
+}
+.text-introduction-doctor > span:last-child {
+  font-weight: 500;
+}
+.letter-img > img {
+  width: 459px;
+  height: 700px;
+  object-fit: contain;
+}
+/*different our*/
+.different-our {
+  margin-top: 5rem;
+}
+.text-different {
+  text-transform: uppercase;
+  margin-left: 5rem;
+  font-size: 3rem;
+}
+.text-different > span {
+  color: var(--textColor);
+  font-weight: bold;
+}
+.box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+.box1 {
+  width: 30%;
+  height: 260px;
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+  color: rgb(0, 119, 255);
+}
+.box1 img {
+  margin-bottom: 15px;
+}
+.hr-class {
+  background-color: gray;
+  height: 2px;
+  width: 50%;
+  border-radius: 2px;
+  display: block;
+  margin-left: 100px;
+}
+.box-text2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}

@@ -1,0 +1,77 @@
+:root {
+  --tiiteColor: #b0228c;
+  --textColor: black;
+}
+.news {
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.news-list {
+  position: relative;
+}
+.news-list > span {
+  font-size: 2.5rem;
+  color: rgb(52,80,115);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.ruler:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: var(--textColor);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.list-of-new {
+  padding-top: 5rem;
+}
+.news-text a:hover {
+  text-decoration: none;
+  color: var(--textColor);
+}
+.news-text > a > span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  animation: text 0.6s linear infinite;
+}
+.border-news {
+  border-top: 1px dashed gray;
+}
+.news1 {
+  padding-top: 2rem;
+  display: flex;
+  padding-bottom: 2rem;
+}
+.news1 a {
+  display: block;
+}
+.news1 > a > img {
+  display: block;
+  width: 18rem;
+  height: 13rem;
+
+  border-radius: 1rem;
+}
+.post-news {
+  margin-left: 10px;
+  display: inline-block;
+}
+.news1 > a > img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@keyframes text {
+  0% {
+    color: navy;
+  }
+  100% {
+    color: red;
+  }
+}

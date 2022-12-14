@@ -1,0 +1,28 @@
+[
+    {
+        "Image": "img/home/1.jpg",
+        "Name": "Đạo đức",
+        "Description": "Với tư cách là những người tiên phong trong ngành nha khoa Việt Nam, chúng tôi tự hào luôn duy trì các tiêu
+        chuẩn đạo đức cao nhất"
+    },
+    {
+        "Image": "img/home/2.jpg",
+        "Name": "Chuyên nghiệp",
+        "Description": "Được sáng lập và vận hành bởi các Bác sĩ đầu ngành tại Việt Nam. Đội ngũ chúng tôi trải qua đào tạo lâm sàng
+        từ các trường đại học quốc tế danh giá và chúng tôi luôn nỗ lực đem đến chất lượng dịch vụ tốt nhất nhằm đáp
+        ứng trọn vẹn mọi nhu cầu của khách hàng."
+    },
+    {
+        "Image": "img/home/3.jpg",
+        "Name": "Kiểm soát nhiễm trùng",
+        "Description": "Chúng tôi tự hào thực hiện các cách thức kiểm soát nhiễm trùng nghiêm ngặt nhất theo tiêu chuẩn Vàng của
+        quốc tế hiện hành. Chúng tôi tin tưởng và tuân thủ vào việc kiểm soát nhiễm trùng nghiêm ngặt vì an toàn của
+        tất cả mọi người."
+    },
+    {
+        "Image": "img/home/4.jpg",
+        "Name": "Chất lượng",
+        "Description": "Với những thiết bị, kỹ thuật và công nghệ đạt tiêu chuẩn quốc tế, tại Nha khoa Premier, chất lượng dịch vụ
+        và sự an toàn của khách hàng là tiêu chí hàng đầu luôn được đội ngũ Bác sĩ và nhân viên quan tâm."
+    }
+]

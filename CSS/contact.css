@@ -1,0 +1,66 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 5%;
+    padding-top: 150px;
+  }
+  .hero {
+    display: flex;
+    padding-bottom: 40px;
+  }
+  .fa-location-dot {
+    font-size: 80px;
+    color: rgb(92, 127, 191);
+  }
+  .icon {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 50px;
+  }
+  .fa-phone {
+    font-size: 80px;
+    color: rgb(92, 127, 191);
+  }
+  .fa-book {
+    font-size: 80px;
+    color: rgb(92, 127, 191);
+  }
+  .fa-user {
+    font-size: 80px;
+    color: rgb(92, 127, 191);
+  }
+  .khanh {
+    font-weight: 800;
+  }
+  .clor {
+    font-weight: 800;
+    color: #345073;
+    font-size: 65px;
+    border: none;
+  }
+  .stay {
+    color: rgb(110, 110, 218);
+    font-size: 75px;
+  }
+  .css {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .form {
+    margin: 30px;
+    padding: 50px;
+  }
+  .form input {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+  }
+  .form input-submit {
+   text-align: center;
+  }

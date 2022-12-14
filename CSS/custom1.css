@@ -1,0 +1,535 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header custom*/
+.header{
+    position: fixed;
+    width: 100%;
+    color: rgb(33, 37, 41);
+    display: flex;
+    padding: 0 5%;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%);
+}
+.header-top{
+    padding: 10px 0;
+    display: flex;
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+.header i{
+    font-size: xx-large;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.logo{
+    margin: 0 40% 0 2%;
+}
+#ihidden{
+    padding-top: 15px;
+}
+#ihidden:hover .hidden{
+    display: flex;
+}
+@media (min-width: 768px) {
+    #ihidden{
+        display: none;
+    }
+}
+.header-top img{
+    height: 50px;
+}
+.contact-inf{
+    width: 100%;
+    display: flex;
+}
+.header-menu{
+    height: 33px;
+}
+.header-menu a, .hidden a{
+    color: rgb(33, 37, 41);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 25px;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 30%);
+}
+.header-menu a:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(0, 119, 255) ;
+    transition: 0.1s;
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+.header-menu .is-active{
+    border-bottom: 3px solid rgb(33, 37, 41) ;
+    padding-bottom: 10px;
+}
+.fixed-header{
+    top: -80px;
+    background: #345073;
+}
+.fixed-header a{
+    color: white;
+    text-shadow: none;
+}
+.fixed-header .is-active{
+    border-bottom: 3px solid rgb(0, 119, 255);
+}
+.fixed-header a:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(0, 119, 255);
+    transition: 0.1s;
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
+    text-align: center;
+    height: 100vh; 
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+}
+.hidden a{
+    height: 10vh;
+    font-size: 20px;
+}
+.hidden span{
+    color: #87d3ed;
+    font-size: x-large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgb(0 119 225 / 50%);
+    margin: 40px 0;
+    background-color: #345073;
+    line-height: 50px;
+}
+@media (max-width: 768px){
+    .header{
+        width: 100%;
+    }
+    .header .contact-inf{
+        display: none;
+    }
+    .logo{
+        margin: 0 80% 0 2%;
+    }
+    .header-menu{
+        display: none;
+    }
+    .fixed-header{
+        display: none;
+    }
+}
+/*end header*/
+/* #mobile{
+    background: rgb(0 0 0/ 50%);
+    z-index: 1;
+    width: 100vh;
+    height: 100vh;
+} */
+
+/*carousel*/
+.carousel-inner img {
+    width: 100%;
+    height: 550px;
+  }
+@media (max-width:768px) {
+    .carousel-inner img{
+        height: 230px;
+    }
+}
+/*end*/
+
+/*content*/
+.content{
+    padding: 0 5%;
+    margin-top: 20px;  
+}
+
+.content-title{
+    width: 80%;
+    animation: lightMove 1.5s 1s ;
+}
+.content-title h2{
+    font-weight: bold;
+    color: #345073;
+}
+.content-title span{
+    color: rgb(0, 119, 255);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+@keyframes lightMove {
+    0%{
+        transform: translate3d(-100%, 0, 0) skewX(30deg);
+        opacity: 0;
+    }
+    50%{
+        transform: skewX(-30deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skewX(5deg);
+    }
+}
+
+hr{
+    width: 60px;
+}
+
+/*content-1*/
+.content-1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+@keyframes zoomIn{
+    0%{
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50%{
+        opacity: 0.8;
+    }
+}
+
+.item-goodpoint{
+    overflow: hidden;
+    width: 25%;
+}
+.item-goodpoint img{
+    width: 100%;
+}
+.item-goodpoint div{
+    padding: 10px 5%;
+    height: 300px;
+}
+.item-goodpoint p {
+    height: 200px;
+    text-align: justify;
+}
+.item-goodpoint:nth-child(even){
+    background: #345073;
+    color: white;
+}
+.item-goodpoint:nth-child(odd){
+    background: #87d3ed;
+    color: black;
+}
+@media (max-width: 768px) {
+    .content-1{
+        flex-direction: column;
+    }
+    .item-goodpoint{
+        width: 100%;
+    }
+    .item-goodpoint div{
+        height: 200px;
+    }
+}
+/*end content-1*/
+
+/*content-2*/
+.content-2{
+    /* margin-top: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service{
+    margin: 3% 3%;
+    position: relative;
+    background: #87d3ed;
+    text-align: center;
+    padding: 3%;
+    border-radius: 20px;
+    z-index: 0;
+    /* min-width: 324px; */
+    /* max-width: 325px; */
+    box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+}
+.service img {
+    background: white;
+    border-radius: 50%;
+}
+.service-1:hover img{
+    transform: translateY(-40px);
+    border: 5px solid #345073;
+    box-shadow: 0 5px 5px rgb(0 0 0 / 40%);
+    width: 60%;
+    transition: all 1s;
+}
+.service:hover{
+    transition: all 1s;
+    transform: translateY(0px);
+    /* padding: 0 2%; */
+}
+@media (max-width: 768px) {
+    .content-2{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .service{
+        margin: 0 auto;
+    }
+    .service-1{
+        margin-bottom: 50px;
+    }
+    .content-title{
+        width: 100%;
+    }
+}
+/*endd content-2*/
+
+/*btn-readmore*/
+.btn-readmore{
+    border-radius: 20px;
+    padding: 0.6rem 1.75rem;
+    color: #345073;
+    background: white;
+    background-position: right bottom;
+}
+
+/*endd btn-readmore*/
+
+/*card slide*/
+.slidecard{
+    padding: 0 5%;
+    background: linear-gradient(white ,#87d3ed);
+    margin-top: 50px;
+    background-position: right;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.content-title{
+    line-height: 2em;
+    text-align: justify;
+}
+#carouselExampleControls{
+    margin-top: 15px;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.card img {
+    width: 100%;
+}
+.card {
+    position: relative;
+    width: 260px;
+    margin: 0 1em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 22, 0.3);
+    border: none;
+    border-radius: 0;
+    text-align: center;
+}
+.card::before{
+    position: absolute;
+    content: 'TS.BS Nguyễn Văn Anh từng có nhiều năm tu nghiệp tại Đức, giữ vị trí quan trọng trong các tổ chức nha khoa uy tín tại Việt Nam';
+    width: auto;
+    height: 14em;
+    background: rgba(52,80,115, 0.7);
+    z-index: -1;
+    border-radius: 3px;
+    text-align: justify;
+    color: white;
+    line-height: 2em;
+    padding: 1em;
+    overflow: hidden;
+}
+.card:nth-child(2)::before{
+    content: 'BS Đỗ Quỳnh Giang có hơn 10 năm kinh nghiệm trong chỉnh nha mắc cài, Invisalign và chỉnh nha trẻ em, đã tham gia đào tạo chỉnh nha quốc tế';
+}
+.card:nth-child(3)::before{
+    content: 'TS.BS Nguyễn Trân thuộc đội ngũ bác sĩ tiểu phẩu giỏi, tốt nghiệp Tiến Sĩ tại Pháp';
+}
+.card:nth-child(4)::before{
+    content: 'BS Trúc có trên 8 năm kinh nghiệm chỉnh nha mắc cài và 2 năm thực hành niềng răng trong suốt Invisalign.';
+}
+.carousel-item:nth-child(2) .card:nth-child(1)::before{
+    content: 'BS Tùng được đào tạo chuyên sâu, giàu kinh nghiệm trong lĩnh vực chỉnh nha';
+}
+.carousel-item:nth-child(2) .card:nth-child(2)::before{
+    content: 'BS Tiến có hơn 20 năm kinh nghiệm trong lĩnh vực nha khoa tổng quát & phục hình thẩm mỹ';
+}
+.carousel-item:nth-child(2) .card:nth-child(3)::before{
+    content: 'BS Thủy có hơn 10 năm kinh nghiệm trong lĩnh vực nha khoa tổng quát & phục hình thẩm mỹ';
+}
+.carousel-item:nth-child(2) .card:nth-child(4)::before{
+    content: 'BS Anh có hơn 7 năm kinh nghiệm trong lĩnh vực nha khoa tổng quát & phục hình thẩm mỹ';
+}
+.card:hover{
+    background: rgb(52,80,115);
+    transition: all 0.8s ease;
+}
+.card:hover a{
+    background: #345073;
+    transition: all 1s ease;
+    color: #87d3ed;
+    text-decoration: none;
+}
+.card:hover::before{
+    z-index: 3;
+}
+.card-body{
+    background: linear-gradient(white, #66c1e0b2);
+    height: 130px;
+}
+.card-text{
+    font-weight: bold;
+    font-size: large;
+    color: #345073;
+}
+.card-title{
+    font-weight: bold;
+}
+#carousel-inner-2 {
+    padding: 2em;
+}
+#carousel-control-prev-2,
+#carousel-control-next-2 {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+@media (min-width: 768px) {
+    .card img {
+      height: 14em;
+}
+}
+/*endd card slide*/
+
+/*customer exp*/
+.customer-exp{
+    height: auto;
+    background: #345073;
+    padding-top: 5%;
+}
+.customer-exp .content-title{
+    text-align: center;
+    margin: 0 auto;
+}
+.customer-exp .content-title h4,.customer-exp .content-title h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: xx-large;
+}
+.customer-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.customer-img div{
+    color: white;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 4%;
+    width: 41%;
+}
+.customer-img div p{
+    width: 100%;
+}
+.customer-img span{
+    font-size: small;
+    margin-top: 0;
+}
+.customer-img img{
+    border-radius: 30px;
+    width: 100%;
+}
+@media (max-width:768px) {
+    .customer-img{
+        flex-direction: column;
+    }
+    .customer-img div{
+        margin: 0 auto;
+    }
+    .customer-img img{
+        width: 100%;
+    }
+}
+/*endd customer exp*/
+
+/*end content*/
+
+/*button back to top*/
+#myBtn{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: none;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    color: rgba(204, 204, 204, 0.911);
+    box-shadow: 0 3px 5px 0 rgba(22, 22, 26, 0.3);
+}
+#myBtn:hover{
+    color: #345073;
+    background: #87d3ed;
+    transition: 0.3s;
+}
+/* end btn*/
+
+/*Type*/
+h1{
+    /*color:red;*/
+    border: 1px solid red;
+}
+/*Class*/
+h1.h1-lineheight{
+    line-height: 300%;
+    background: linear-gradient(265deg,rgb(132, 1, 226),rgb(234, 0, 238));
+}
+/*Id*/
+h1#h1-font{
+font-family: tahoma;
+color:purple;
+}
+.h1-font{
+    font-family: 'Courier New', Courier, monospace!important;
+    color: blue;
+}
+div.cangiua{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background: #a6a6a6;
+    height: 50vh;
+}
+a{
+    color:green;
+    text-decoration: none;
+    font-weight: bold;
+    padding:10px;
+}
+p.chuCai::first-letter{
+font-size: 3em;
+}
+p.chuCai::before{
+    content:'A';
+}
+p.chuCai::after{
+    content:'B';
+}
+iframe{
+    width: 250px;
+    height: 200px;
+}

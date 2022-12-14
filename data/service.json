@@ -1,0 +1,38 @@
+[
+    {
+        "Image": "img/home/Mask-group-1-2.png",
+        "aLink": "Trong-rang-implant.html",
+        "Name": "Trồng Răng Implant",
+        "Description": "Giải pháp tối ưu phục hồi mất 1 răng, nhiều răng và toàn hàm, với trụ Implant được cấy vào xương hàm nhằm thay thế cho chân răng đã mất."
+    },
+    {
+        "Image": "img/home/Mask-group-2-2.png",
+        "aLink": "nieng-rang.html",
+        "Name": "Niềng Răng",
+        "Description": "Giải pháp niềng răng mắc cài, niềng răng trong suốt Invisalign cho người lớn - trẻ em từ 6 tuổi, mang đến nụ cười thẳng đều, chắc khỏe."
+    },
+    {
+        "Image": "img/home/Mask-group-3.png",
+        "aLink": "boc-rang-su.html",
+        "Name": "Bọc Răng Sứ",
+        "Description": "Thủ thuật \"mặc áo ngoài cho răng\", bao phủ toàn bộ và thực hiện chức năng của thân răng, mang đến cho răng một dáng vẻ mới."
+    },
+    {
+        "Image": "img/home/Mask-group.png",
+        "aLink": "chua-tuy-rang.html",
+        "Name": "Chữa tủy răng",
+        "Description": "Quá trình lấy sạch tủy răng bị tổn thương, trám kín ống chứa tủy và phục hồi răng. Chữa tủy răng sớm để tránh nhổ bỏ răng."
+    },
+    {
+        "Image": "img/home/nhakhoatrem.png",
+        "aLink": "nha-khoa-tre.html",
+        "Name": "Nha Khoa Trẻ Em",
+        "Description": "Chăm sóc, theo dõi, điều trị vấn đề răng miệng cho trẻ trong độ tuổi răng sữa đến khi thay hoàn thiện răng vĩnh viễn."
+    },
+    {
+        "Image": "img/home/nho-rang-khon.png",
+        "aLink": "nho-rang-khon.html",
+        "Name": "Nhổ răng khôn",
+        "Description": "Tiểu phẫu nhổ bỏ 1 hoặc nhiều răng khôn (răng số 8) mọc lệch. Kiểm soát và xử lý tốt chấn thương dây thần kinh nếu có."
+    }
+]

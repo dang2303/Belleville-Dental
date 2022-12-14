@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-title{
+    padding-top: 150px;
+    margin: 0 5%;
+}
+@media (max-width:768px) {
+    .content-title{
+        padding-top: 100px;
+        margin: 0 5%;
+    }    
+}
+.content-2{
+    margin: 0 5%;
+}
+.service{
+    margin-top: 30px;
+    max-width: 325px;
+}

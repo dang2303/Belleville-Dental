@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+:root {
+  --textColor: navy;
+}
+html {
+  font-family: "Playfair Display", sans-serif;
+}
+.news1 {
+  padding-top: 11rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.tittle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--textColor);
+  margin-bottom: 10px;
+  animation: text 1.5s linear infinite;
+}
+@keyframes text {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: var(--textColor);
+  }
+}
+.btn-search {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-top: 2px dashed gray;
+}
+.btn-news1 {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+.btn-news1 > span {
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.btn-news1 > ion-icon {
+  padding-right: 10px;
+  opacity: 0.5;
+}
+.btn-list {
+  position: absolute;
+  border: 1px solid black;
+  width: 100%;
+  list-style-position: inside;
+  display: none;
+}
+.col-news {
+  padding-left: 20px;
+}
+.col-news li {
+  cursor: pointer;
+  list-style: none;
+}
+.col-news li:hover {
+  color: red;
+}
+.col-news2 {
+  list-style-position: inside;
+  padding-left: 3rem;
+}
+.col-news2 li {
+  padding-top: 1rem;
+}
+.btn-list > ul > li {
+  list-style-type: none;
+}
+.btn-list > ul > li ul li {
+  list-style-type: none;
+}
+/* Event script */
+.active .btn-list {
+  display: block;
+}
+.active {
+  padding-bottom: 12.8rem;
+}
+.active .btn-news1 {
+  border-bottom: none;
+}
+.active .btn-list {
+  border-top: none;
+  background-color: #f4f4f4;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+  padding-left: 1.5rem;
+}
+.active .btn-list ul li b:hover {
+  color: red;
+}
+.active .btn-list ul li:first-child li:hover,
+.active .btn-list ul li b:hover {
+  transition: color 0.2s linear;
+  color: red;
+  cursor: pointer;
+}
+
+/* end js */
+.teeth1 {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.tittle-content {
+  margin-top: 1.5rem;
+  color: var(--textColor);
+  font-size: 1.5rem;
+  font-weight: 550;
+  position: relative;
+}
+.tittle-content span::after {
+  content: "";
+  background-color: yellow;
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.text-content {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.text-content > img {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-left: 25%;
+  width: 50%;
+  object-fit: center;
+  border: none;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.text-content-ins1 {
+  padding-top: 1.5rrem;
+  display: block;
+}
+.text-content-ins1-tittle {
+  font-size: 1.5rem;
+  color: var(--textColor);
+  outline: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.text-content-ins1-tittle ion-icon {
+  font-size: 2rem;
+  transform: translate(0, 20%);
+}
+.text-content-ins1 img {
+  width: 50rem;
+  margin-left: 9rem;
+  margin-bottom: 1rem;
+}
+.text-content-ins2 {
+  display: block;
+}
+.text-content-ins2-tittle {
+  font-size: 1.5rem;
+  color: var(--textColor);
+  outline: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.text-content-ins2-tittle ion-icon {
+  font-size: 2rem;
+  transform: translate(0, 20%);
+}
+.text-content-ins2 > img {
+  margin-top: 1.5rem;
+  margin-left: 25%;
+  width: 50%;
+  object-fit: center;
+  margin-bottom: 2rem;
+}
+
+.text-content-ins3-tittle {
+  font-size: 1.5rem;
+  color: var(--textColor);
+  outline: none;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.text-content-ins3-tittle ion-icon {
+  font-size: 2rem;
+  transform: translate(0, 20%);
+}
+.text-content-ins3 p:first-child {
+  padding-bottom: 20px;
+  color: red;
+}
+.address-title img {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-left: 25%;
+  width: 55%;
+  object-fit: center;
+  border: none;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.address-title ul {
+  padding-left: 3rem;
+}
+.address-title ul li a {
+  text-decoration: none;
+}
+.address-title iframe {
+  width: 60rem;
+  height: 30rem;
+  padding-bottom: 2rem;
+}
+/*comment */
+.comment {
+  margin-top: 1rem;
+  padding-left: 7rem;
+}
+.comment > span {
+  padding-left: 10px;
+}
+.form-check {
+  padding-top: 1rem;
+}
+.form-text textarea {
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+}
+#demo {
+  display: none;
+}
+.input-check {
+  padding-top: 1rem;
+}
+.input-check input:first-child {
+  margin-right: 3rem;
+}
+.input-check input {
+  height: 2.5rem;
+  width: 31rem;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: left;
+  overflow: hidden;
+  outline: none;
+  border-radius: 10px;
+}
+.comment > input {
+  margin-left: 1.2rem;
+  margin-top: 5px;
+}
+input[type="submit"] {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  background: #004793;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+/* swiper */
+.container {
+  margin-top: 1.5rem;
+}
+.container span {
+  color: #004793;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.swiper {
+  margin-top: 2rem;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide {
+  display: flex;
+  padding-left: 1rem;
+}
+.swiper-slide img {
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.image-swiper {
+  width: 16rem;
+  margin-right: 2rem;
+}
+.image-swiper > span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+.image-swiper a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+}
+
+.image-swiper span:hover a {
+  color: red;
+  text-decoration: none;
+}
